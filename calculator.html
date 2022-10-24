@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link rel="stylesheet" href="./calculator.css" />
+    <title>The best calculator</title>
+  </head>
+  <body>
+    <nav>
+      <!--a button with a paypal link for supporting the project-->
+      <div>
+        <button class="donate-button">
+          <a href="https://www.paypal.me/AnastasiaAvakin" target="_blank">
+            Support us
+          </a>
+        </button>
+      </div>
+      <!--a button for a dark theme version of the page-->
+      <div>
+        <button class="darktheme-btn">Enable dark theme</button>
+      </div>
+    </nav>
+    <header>
+      <!-- mini banner -->
+      <div>
+        <div>
+          <img
+            src="./assets/calculator-banner-nobkg.png"
+            alt="banner"
+            id="banner"
+          />
+        </div>
+        <div id="important-heading">
+          <h1>Your average math calculator</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <input type="text" class="number1" />
+      <select class="math-operations">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value=":">:</option>
+      </select>
+      <input type="text" class="number2" />
+      <button class="equal" title="Click this button to see the result">
+        =
+      </button>
+      <button class="clear-all">AC</button>
+      <div class="result-panel"></div>
+    </main>
+
+    <footer>Made by mar1an</footer>
+    <!--javascript file-->
+    <script src="./calculator.js"></script>
+  </body>
+</html>
